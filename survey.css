@@ -1,0 +1,21 @@
+html{
+	background-color: #B0E0E6;
+	text-align: center;
+}
+
+form{
+	background-color: #FFFFFF;
+	margin-top: 25px;
+	margin-left: 160px;
+	margin-right: 160px;
+	margin-bottom: 5px;
+	padding: 30px;
+}
+
+input{
+	margin: 10px;
+}
+
+div{
+	margin: 30px;
+}
