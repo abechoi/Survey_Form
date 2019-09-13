@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<main>
+
+	<script src="bundle.js"></script>
+	<link rel="stylesheet" href="survey.css">
+
+	<h1 id="title">Survey Form</h1>
+	<p id="description">A responsive web design project by Free Code Camp</p>
+
+	<form id="survey-form">
+		
+		<p>Let us know how we can improve freeCodeCamp</p>
+		<label id="name-label">* Name: </label>
+		<input type="text" id="name" required="name" placeholder="Enter your name">
+		<br>
+		<label id="email-label">* Email: </label>
+		<input type="email" id="email" required="email" placeholder="Enter your email">
+		<br>
+		<label id="number-label">* Age: </label>
+		<input type="number" id="number" required="number" min="1" max="100" placeholder="Age">
+		<br>
+
+		<div>
+			Which option best describes your current role? 
+			<select type="dropdown" id="dropdown" name="role-dropdown">
+				<option selected disabled>Select one</option>
+				<option value="student">Student</option>
+				<option value="job">Full-time Job</option>
+				<option value="learner">Full-time learner</option>
+				<option value="na">Prefer not to say</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div>
+			How likely is that you would recommend freeCodeCamp to a friend?
+			<input type="radio" name="radio1" value="definitely">Definitely<br>
+			<input type="radio" name="radio1" value="maybe">Maybe<br>
+			<input type="radio" name="radio1" value="na">Not sure<br>
+		</div>
+
+		<div>
+			What do you like most in FCC: 
+			<select type="dropdown" id="like-dropdown" name="like-dropdown">
+				<option selected disabled>Select one</option>
+				<option value="Challenges">Challenges</option>
+				<option value="maybe">Projects</option>
+				<option value="na">Community</option>
+				<option value="na">Open Source</option>
+			</select>
+		</div>
+
+		<div>
+			Things that should be improved in the future
+			(Check all that appy):
+			<input type="checkbox" name="checkbox" value="1">Front-end Projects<br>
+			<input type="checkbox" name="checkbox" value="2">Back-end Projects<br>
+			<input type="checkbox" name="checkbox" value="3">Data Visualization<br>
+			<input type="checkbox" name="checkbox" value="4">Challenges<br>
+			<input type="checkbox" name="checkbox" value="5">Open Source Community<br>
+			<input type="checkbox" name="checkbox" value="6">Gitter help rooms<br>
+			<input type="checkbox" name="checkbox" value="7">Videos<br>
+			<input type="checkbox" name="checkbox" value="8">City Meetups<br>
+			<input type="checkbox" name="checkbox" value="9">Wiki<br>
+			<input type="checkbox" name="checkbox" value="10">Forum<br>
+			<input type="checkbox" name="checkbox" value="11">Additional Courses<br>
+		</div>
+
+		<div>
+			Comments: <textarea></textarea>
+		</div>
+
+		<button id="submit">SUBMIT</button>
+	</form>
+</main>
